@@ -7,4 +7,11 @@
   text-align: center;
   padding: 1.125rem 0;
   width: 100%;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.btn:hover,
+.btn:focus {
+  filter: brightness(80%);
 }
