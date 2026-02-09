@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="src/css/utilities.css" />
 
     <link rel="stylesheet" href="src/css/blocks/header/header.css" />
+    <link rel="stylesheet" href="src/css/blocks/main-menu/main-menu.css" />
+    <link rel="stylesheet" href="src/css/blocks/menu-item/menu-item.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -30,5 +32,55 @@
         />
       </div>
     </header>
+
+    <main>
+      <section class="main-menu">
+        <div class="main-menu__inner u-container">
+          <h2 class="sr-only">Main Menu</h2>
+          <ul class="main-menu__list u-list-reset" id="main-menu">
+            <li class="main-menu__item">
+              <div class="menu-item">
+                <p class="menu-item__emoji">🍕</p>
+                <div class="menu-item__content">
+                  <h3 class="menu-item__title">Pizza</h3>
+                  <p class="menu-item__ingredients">
+                    pepperoni,mushrom,mozarella
+                  </p>
+                  <p class="menu-item__price">$14</p>
+                </div>
+                <button class="menu-item__add-btn" data-add>+</button>
+              </div>
+            </li>
+            <li class="main-menu__item">
+              <div class="menu-item">
+                <p class="menu-item__emoji">🍕</p>
+                <div class="menu-item__content">
+                  <h3 class="menu-item__title">Pizza</h3>
+                  <p class="menu-item__ingredients">
+                    pepperoni,mushrom,mozarella
+                  </p>
+                  <p class="menu-item__price">$14</p>
+                </div>
+                <button class="menu-item__add-btn" data-add>+</button>
+              </div>
+            </li>
+            <li class="main-menu__item">
+              <div class="menu-item">
+                <p class="menu-item__emoji">🍕</p>
+                <div class="menu-item__content">
+                  <h3 class="menu-item__title">Pizza</h3>
+                  <p class="menu-item__ingredients">
+                    pepperoni,mushrom,mozarella
+                  </p>
+                  <p class="menu-item__price">$14</p>
+                </div>
+                <button class="menu-item__add-btn" data-add>+</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
