@@ -126,6 +126,8 @@
           class="checkout__input"
           placeholder="Enter your name"
           required
+          minlength="2"
+          maxlength="40"
         />
 
         <label class="sr-only" for="card-number">Card Number</label>
@@ -135,6 +137,8 @@
           class="checkout__input"
           placeholder="Enter card number"
           required
+          minlength="16"
+          maxlength="16"
         />
 
         <label class="sr-only" for="card-number">CVV</label>
@@ -144,6 +148,8 @@
           class="checkout__input"
           placeholder="Enter CVV"
           required
+          minlength="3"
+          maxlength="3"
         />
 
         <button type="submit" class="btn checkout__btn">Pay</button>
