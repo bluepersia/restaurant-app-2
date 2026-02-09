@@ -5,11 +5,11 @@ function generateHTML(items) {
               <div class="menu-item" data-item-id="${id}">
                 <p class="menu-item__emoji">${emoji}</p>
                 <div class="menu-item__content">
-                  <h3 class="menu-item__title">${name}</h3>
+                  <h3 class="menu-item__title u-fw-400">${name}</h3>
                   <p class="menu-item__ingredients">
                     ${ingredients.join(", ")}
                   </p>
-                  <p class="menu-item__price">$${price}</p>
+                  <p class="menu-item__price u-fw-400">$${price}</p>
                 </div>
                 <button class="menu-item__add-btn" data-add>+</button>
               </div>

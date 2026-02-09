@@ -12,7 +12,6 @@
 
 .menu-item__title {
   font-size: 1.75rem;
-  font-weight: 400;
 }
 .menu-item__ingredients {
   color: rgba(139, 139, 139, 1);
@@ -21,7 +20,6 @@
 
 .menu-item__price {
   font-size: 1.25rem;
-  font-weight: 400;
 }
 
 .menu-item__add-btn {
