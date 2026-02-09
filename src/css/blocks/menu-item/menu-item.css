@@ -14,3 +14,31 @@
   font-size: 1.75rem;
   font-weight: 400;
 }
+.menu-item__ingredients {
+  color: rgba(139, 139, 139, 1);
+  margin-bottom: 0.5rem;
+}
+
+.menu-item__price {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.menu-item__add-btn {
+  margin-left: auto;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 200;
+  background-color: transparent;
+  border: solid 1.5px rgba(222, 222, 222, 1);
+  transition: background-color 300ms;
+  cursor: pointer;
+}
+
+.menu-item__add-btn:hover,
+.menu-item__add-btn:focus {
+  background-color: rgba(222, 222, 222, 1);
+}
