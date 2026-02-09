@@ -20,3 +20,7 @@
   list-style: none;
   padding-left: 0;
 }
+
+.u-fw-400 {
+  font-weight: 400;
+}
