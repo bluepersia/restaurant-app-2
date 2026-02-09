@@ -9,7 +9,7 @@ export default function MainMenu(el, productsContext, cartContext) {
     if (e.target.dataset.add === "") {
       const closestId = e.target.closest("[data-item-id]");
 
-      cartContext.addToCart(closestId.dataset.itemId);
+      cartContext.addToCart(Number(closestId.dataset.itemId));
     }
   }
 }
