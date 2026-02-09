@@ -119,7 +119,7 @@
 
     <section class="checkout" id="checkout">
       <h2 class="checkout__title">Enter card details</h2>
-      <form class="checkout__form">
+      <form class="checkout__form" data-form>
         <label class="sr-only" for="full-name">Full Name</label>
         <input
           type="text"
@@ -153,7 +153,9 @@
           maxlength="3"
         />
 
-        <button type="submit" class="btn checkout__btn">Pay</button>
+        <button type="submit" class="btn checkout__btn" data-pay-btn>
+          Pay
+        </button>
       </form>
     </section>
     <script src="./src/js/index.js" type="module"></script>

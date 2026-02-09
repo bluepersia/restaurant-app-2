@@ -1,6 +1,6 @@
 import { calculateCart, generateListHTML } from "./utils.js";
 
-export default function Cart(el, cartContext, productsContext) {
+export default function Cart(el, cartContext, productsContext, checkout) {
   el.style.display = "none";
 
   const listEl = el.querySelector("[data-list]");
@@ -33,5 +33,7 @@ export default function Cart(el, cartContext, productsContext) {
     }
   }
 
-  function handleCheckoutClick() {}
+  function handleCheckoutClick() {
+    checkout.open();
+  }
 }

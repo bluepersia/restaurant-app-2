@@ -34,4 +34,11 @@ function removeFromCartPure(state, id) {
   return { ...state, cart: newCart };
 }
 
-export { addToCartPure, removeFromCartPure };
+function emptyCartPure(state) {
+  return {
+    ...state,
+    cart: [],
+  };
+}
+
+export { addToCartPure, removeFromCartPure, emptyCartPure };
