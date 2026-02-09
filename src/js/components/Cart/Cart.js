@@ -7,6 +7,7 @@ export default function Cart(el, cartContext, productsContext) {
   const totalEl = el.querySelector("[data-total]");
   const checkoutBtn = el.querySelector("[data-checkout-btn]");
 
+  listEl.addEventListener("click", handleListClick);
   checkoutBtn.addEventListener("click", handleCheckoutClick);
 
   cartContext.cartChanged.push(onCartChanged);
@@ -23,6 +24,13 @@ export default function Cart(el, cartContext, productsContext) {
     const order = calculateCart(cart, productsContext);
     listEl.innerHTML = generateListHTML(order);
     totalEl.textContent = `$${order.total}`;
+  }
+
+  function handleListClick(e) {
+    if (e.target.dataset.remove === "") {
+      const closestId = e.target.closest("[data-item-id]");
+      cartContext.removeFromCart(Number(closestId.dataset.itemId));
+    }
   }
 
   function handleCheckoutClick() {}

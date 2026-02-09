@@ -1,7 +1,12 @@
 function generateListHTML(order) {
   return order.items
     .map(
-      ({ name, quantity, getSubtotal }) => `<li class="cart__list-item">
+      ({
+        id,
+        name,
+        quantity,
+        getSubtotal,
+      }) => `<li class="cart__list-item" data-item-id="${id}">
                 <h3 class="cart__list-item-name u-fw-400">${name} ${
         quantity > 1 ? `(${quantity})` : ""
       }</h3>
