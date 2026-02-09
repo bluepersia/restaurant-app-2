@@ -1,4 +1,4 @@
-import { addToCartPure, removeFromCartPure } from "./utils.js";
+import { addToCartPure, emptyCartPure, removeFromCartPure } from "./utils.js";
 
 export default function CartContext() {
   let state = {
@@ -22,10 +22,17 @@ export default function CartContext() {
     cartChanged.forEach((el) => el(state.cart));
   }
 
+  function emptyCart() {
+    state = emptyCartPure(state);
+
+    cartChanged.forEach((el) => el(state.cart));
+  }
+
   return {
     getCart,
     cartChanged,
     addToCart,
     removeFromCart,
+    emptyCart,
   };
 }
