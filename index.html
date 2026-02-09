@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="src/css/blocks/header/header.css" />
     <link rel="stylesheet" href="src/css/blocks/main-menu/main-menu.css" />
     <link rel="stylesheet" href="src/css/blocks/menu-item/menu-item.css" />
+    <link rel="stylesheet" href="src/css/blocks/btn/btn.css" />
+    <link rel="stylesheet" href="src/css/blocks/cart/cart.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -78,6 +80,38 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="cart" id="cart">
+        <div class="cart__inner u-container">
+          <h2 class="cart__title u-fw-400">Your order</h2>
+
+          <div class="cart__order">
+            <ul class="cart__list u-list-reset" data-list>
+              <li class="cart__list-item">
+                <h3 class="cart__list-item-name u-fw-400">Pizza</h3>
+                <button class="cart__list-item-remove-btn" data-remove>
+                  remove
+                </button>
+                <p class="cart__list-item-price">$14</p>
+              </li>
+              <li class="cart__list-item">
+                <h3 class="cart__list-item-name u-fw-400">Beer</h3>
+                <button class="cart__list-item-remove-btn" data-remove>
+                  remove
+                </button>
+                <p class="cart__list-item-price">$12</p>
+              </li>
+            </ul>
+            <div class="cart__list-item cart__total-wrapper">
+              <h3 class="cart__list-item-name u-fw-400">Total price:</h3>
+              <p class="cart__list-item-price" data-total>$26</p>
+            </div>
+          </div>
+          <button class="cart__checkout-btn btn" data-checkout-btn>
+            Complete order
+          </button>
         </div>
       </section>
     </main>
