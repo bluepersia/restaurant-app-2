@@ -1,0 +1,9 @@
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(22, 219, 153, 1);
+  border: none;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.125rem 0;
+}
